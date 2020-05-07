@@ -9,7 +9,7 @@ $(document).ready(function(){
 
                         $.ajax({
                             type: "POST",
-                            url:"http://127.0.0.1:8001/account/giveExp/?username="+$.cookie('username')+"&experience=12",
+                            url:"http://danziel2.pythonanywhere.com/account/giveExp/?username="+$.cookie('username')+"&experience=12",
                             success: function(data){
                                 
                                 $.removeCookie('exp', {path: '/'});

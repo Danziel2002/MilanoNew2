@@ -11,7 +11,7 @@ $(document).ready(function (){
 
                         $.ajax({
                                 type:"POST",
-                                url: 'http://127.0.0.1:8001/account/registerUser/?username=' + username + '&email=' + email + "&password=" + password,
+                                url: 'http://danziel2.pythonanywhere.com/account/registerUser/?username=' + username + '&email=' + email + "&password=" + password,
                                 succes : function(data){
                                     window.location.href = '/';
                                 }
@@ -32,7 +32,7 @@ $(document).ready(function (){
 
                         $.ajax({
                                 type:"POST",
-                                url: "http://127.0.0.1:8001/account/giveExp/?username="+username+"&experience="+exp
+                                url: "http://danziel2.pythonanywhere.com/account/giveExp/?username="+username+"&experience="+exp
                         });
                 }
         });

@@ -12,7 +12,7 @@ $(document).ready(function(){
                 
                 $.ajax({
                         type: "POST",
-                        url: "http://127.0.0.1:8001/account/giveExp/?username="+username+"&experience="+totalExp,
+                        url: "http://danziel2.pythonanywhere.com/account/giveExp/?username="+username+"&experience="+totalExp,
                         success: function(data){
                                 location.reload();
                         }

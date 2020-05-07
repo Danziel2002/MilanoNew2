@@ -29,7 +29,7 @@ $(document).ready(function() {
 
                         $.ajax({
                                 type:"GET",
-                                url:"http://127.0.0.1:8001/account/loginUser/?username="+username+"&password="+password,
+                                url:"http://danziel2.pythonanywhere.com/account/loginUser/?username="+username+"&password="+password,
                                 dataType: 'json',
                                 success: function(data,status, xhr){
                                     $.cookie('username', data['username'], {path: '/' });
