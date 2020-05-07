@@ -1,0 +1,43 @@
+<html>
+
+        {% load static %}
+        <head>
+                     <title>User register</title>
+                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                     <script src="{% static 'jquery-cookie-master/src/jquery.cookie.js'%}"></script>
+                    <link href="{% static 'cssFiles/transportManager.css' %}" rel="stylesheet" type="text/css">
+
+       </head>
+
+        <body>
+                <div class = 'navbar'>
+
+                        <div class = 'logo'>
+                                <h1> Sc </h1>
+                        </div>
+
+                        <div class = 'score'>
+                            <h1>{{ Level }}.{{ Exp }}</h1>
+                        </div>
+
+                        <div class = 'name'>
+                                <h1> {{ username }}</h1>
+                        </div>
+
+
+                </div>
+
+
+                <div class = 'content'> 
+                    <title>Transport Manager</title>
+                    
+
+                    <label for='upload-photo'>Upload Photo...</label>
+                    <input type="file" accept='image/*;capture=camera' id='upload-photo' class='photoInput'>
+                    <button class="sendButton">Send Photo</button>
+
+                    <script src="{% static 'jsFiles/transportManagement.js' %}"></script>
+                </div>
+        </body>
+
+</html>

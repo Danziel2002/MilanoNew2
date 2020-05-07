@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+        {% load static %}
+
+        <head>
+                <title> Home Page </title>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <link href="{% static 'cssFiles/homePage.css' %}" rel="stylesheet" type="text/css">
+        </head>
+
+        <body>
+
+                <div class = 'navbar'>
+
+                        <div class = 'logo'>
+                                <h1> Sc </h1>
+                        </div>
+
+                        <div class = 'score'>
+                            <h1>{{ Level }}.{{ Exp }}</h1>
+                        </div>
+
+                        <div class = 'name'>
+                                <h1> {{ username }}</h1>
+                        </div>
+
+
+                </div>
+
+
+                <div class = 'content'>
+
+                       <div class = 'Text'>
+                               <h1 class = 'Title'>Choose an</h1>
+                               <h1> activity </h1>
+                        </div>
+
+                       <div class = 'item'>
+                               <a href = '/transport/scaner/'><h1 class = 'blockItem'>Common transport</h1></a>
+                        </div>
+
+                       <div class = 'item'>
+                               <a href = '/barcode/reader/'><h1 class = 'blockItem'>Shopping</h1></a>
+                        </div>
+
+                       <div class = 'item'>
+                               <a href = '/recycle/managerPage/'><h1 class = 'blockItem'>Recycle</h1></a>
+                        </div>
+
+
+                </div>
+
+
+
+        </body>

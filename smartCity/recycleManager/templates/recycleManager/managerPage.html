@@ -1,0 +1,44 @@
+<html>
+
+        <head>
+                {% load static %}
+                     <title>User register</title>
+                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                     <script src="{% static 'jquery-cookie-master/src/jquery.cookie.js'%}"></script>
+                    <link href="{% static 'cssFiles/managerPage.css' %}" rel="stylesheet" type="text/css">
+
+       </head>
+
+       <body>
+                <div class = 'navbar'>
+
+                        <div class = 'logo'>
+                                <h1> Sc </h1>
+                        </div>
+
+                        <div class = 'score'>
+                            <h1>{{ Level }}.{{ Exp }}</h1>
+                        </div>
+
+                        <div class = 'name'>
+                                <h1> {{ username }}</h1>
+                        </div>
+
+
+                </div>
+
+
+                <div class = 'content'>
+
+
+                        <input class='glassValue' placeholder = 'Glass amount...'>
+                        <input class='paperValue' placeholder = 'Paper amount...'>
+                        <input class='plasticValue' placeholder = 'Plastic amount...'>
+                        <input class='usernameValue' placeholder = 'Username'>
+                    <input class='giveExp' type ='submit'>
+
+                    <script src="{% static 'jsFiles/managerPage.js' %}"></script>
+                </div>
+        </body>
+
+</html>

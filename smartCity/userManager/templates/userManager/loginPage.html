@@ -1,0 +1,22 @@
+<html>
+
+        <head>
+        </head>
+
+        <body>{% load static%}
+
+                    <title>User register</title>
+                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                     <script src="{% static 'jquery-cookie-master/src/jquery.cookie.js'%}"></script>
+                    <link href="{% static 'cssFiles/userRegister.css' %}" rel="stylesheet" type="text/css">
+
+                    <div class = 'content'>
+                    <input type="text" class="usernameInput">
+                    <input type="password" class="passwordInput">
+                    <button class="loginButton">Sign In</button>
+
+                    </div>
+                    <script src="{% static 'jsFiles/userLogin.js' %}"></script>
+        </body>
+
+</html>
