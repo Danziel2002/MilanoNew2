@@ -7,6 +7,8 @@
                 <title> Home Page </title>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
                 <link href="{% static 'cssFiles/homePage.css' %}" rel="stylesheet" type="text/css">
+                <script src="{% static 'jquery-cookie-master/src/jquery.cookie.js'%}"></script>
+                    <script src="{% static 'jsFiles/homePage.js' %}"></script>
         </head>
 
         <body>
@@ -22,6 +24,7 @@
                         </div>
 
                         <div class = 'name'>
+                                <h1 class = 'logOut'> LogOut </h1>
                                 <h1> {{ username }}</h1>
                         </div>
 
