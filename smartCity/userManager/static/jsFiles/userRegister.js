@@ -13,8 +13,9 @@ $(document).ready(function (){
                                 type:"POST",
                                 url: 'http://127.0.0.1:8001/account/registerUser/?username=' + username + '&email=' + email + "&password=" + password,
                                 succes : function(data){
-                                        alert(data['Name']);
+                                    window.location.href = '/';
                                 }
+
                         });
                 }else{
                         console.log('FAIL')

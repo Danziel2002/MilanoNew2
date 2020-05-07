@@ -37,6 +37,7 @@ $(document).ready(function() {
                                     $.cookie('level', data['level'], {path: '/' });
                                     $.cookie('recycle', data['recycle'], {path: '/'});
                                     
+                                    window.location.href = '/';
                                 }
                         })
                 }
